@@ -13,7 +13,7 @@ data "aws_instances" "nomad_server" {
 module "efs" {
   source = "cloudposse/efs/aws"
   # Cloud Posse recommends pinning every module to a specific version
-  version     = "0.31.1"
+  version     = "0.32.7"
 
   for_each        = var.names
   name            = each.key
